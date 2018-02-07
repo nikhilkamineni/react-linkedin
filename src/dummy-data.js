@@ -20,7 +20,7 @@ const dummyData = [
   {
     username: 'Merlin',
     imageUrl: 'https://s3.amazonaws.com/filestore.rescuegroups.org/5880/pictures/animals/12456/12456321/53870787_500x500.jpg',
-    jobTitle: 'Senior Product Manager at Hairball and Associates',
+    jobTitle: 'Senior Product Manager at Hairball & Hairball',
     connections: 'Biscuit and 783 others'
   },
   {
@@ -31,10 +31,10 @@ const dummyData = [
   },
   {
     username: 'Biscuit',
-    imageUrl: 'https://iheartcats.com/wp-content/uploads/2015/12/shutterstock_171850070.jpg',
+    imageUrl: 'https://static.wixstatic.com/media/08c8c6_10132ee9a73d46b8912780f68b5a696a.jpg/v1/fill/w_500,h_500,q_85,usm_0.66_1.00_0.01/08c8c6_10132ee9a73d46b8912780f68b5a696a.jpg',
     jobTitle: 'Head Dreamer at Catbeds Inc.',
-    connections: 'Pickle and 339 others'
+    connections: 'Emma and 339 others'
   },
 ];
 
-export default dummData;
+export default dummyData;
