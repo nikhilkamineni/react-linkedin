@@ -1,9 +1,32 @@
 import React from 'react';
+import styled from 'styled-components';
 
 function Nav() {
+  const NavStyles = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    div {
+      margin: 0 15px;
+    }
+  `;
   return (
-    <div className='nav'>
-    </div>
+    <NavStyles>
+      <img src='https://www.juliusdesign.net/sm-reference/img/linkedin-logo.png' className='logo'/>
+      {/* <div>Search Bar</div> */}
+      <div>
+        <form>
+          <input type='text' value='Search' />
+        </form>
+      </div>
+      <div>Home</div>
+      <div>My Network</div>
+      <div>Jobs</div>
+      <div>Messaging</div>
+      <div>Notifications</div>
+      <div>Me</div>
+    </NavStyles>
   );
 }
 

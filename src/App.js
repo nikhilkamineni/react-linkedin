@@ -1,18 +1,32 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Nav from './components/Nav/nav';
+import styled from 'styled-components';
+
+const NavContainerStyle = styled.div`
+  height: 100px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #0077B5;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .logo {
+    height: 100px;
+    width: 100px;
+  }
+`;
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <NavContainerStyle className='NavContainer'><Nav /></NavContainerStyle>
+
       </div>
     );
   }
