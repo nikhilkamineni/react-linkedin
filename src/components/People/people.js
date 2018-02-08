@@ -50,11 +50,15 @@ function People(props) {
       height: 20px;
       padding: 15px;
     }
+
+    .person:hover {
+      background-color: #E6E9EC;
+    }
   `;
   
   return(
     <PeopleStyles>
-      <ul>
+      <ul className='person'>
         <li><img src={props.person.imageUrl} /></li>
         <li className='userName'>{props.person.username}</li>
         <li className='jobTitle'>{props.person.jobTitle}</li>

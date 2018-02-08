@@ -8,6 +8,7 @@ import People from './components/People/people';
 import Connections from './components/Connections/connections';
 import Promoted from './components/Promoted/promoted';
 
+// styles
 const BodyContainerStyle = styled.div`
   display: flex;
   justify-content: space-between;
@@ -38,6 +39,7 @@ const PeopleContainerStyle = styled.div`
   background-color: #FFFFFF;
 `;
 
+// App component
 class App extends Component {
   state = {dummyData};
 
