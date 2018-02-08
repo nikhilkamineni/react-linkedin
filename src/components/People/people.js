@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 function People(props) {
   const PeopleStyles = styled.div`
-    width: 30%;
+    width: 200px;
     border: 1px solid black;
     
     ul {
@@ -18,6 +18,8 @@ function People(props) {
     li {
       display: flex;
       justify-content: center;
+      color: #86888A;
+      padding: 5px;
     }
 
     img {
@@ -30,15 +32,28 @@ function People(props) {
       width: auto;
       background: white;
       color: #0077B5;
+      margin: 5px 0;
     }
+
+    .userName {
+      color: #313335;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .jobTitle {
+      font-size: 0.8rem;
+    }
+
+
   `;
   return(
     <PeopleStyles>
       <ul>
         <li><img src={props.person.imageUrl} /></li>
-        <li>{props.person.username}</li>
-        <li>{props.person.jobTitle}</li>
-        <li>{props.person.connections}</li>
+        <li className='userName'>{props.person.username}</li>
+        <li className='jobTitle'>{props.person.jobTitle}</li>
+        <li className='connections'>{props.person.connections}</li>
         <li><button>Connect</button></li>
       </ul>
     </PeopleStyles>

@@ -5,6 +5,7 @@ import './App.css';
 import Nav from './components/Nav/nav';
 import dummyData from './dummy-data'
 import People from './components/People/people';
+import Connections from './components/Connections/connections'
 
 const BodyContainerStyle = styled.div`
   display: flex;
@@ -12,7 +13,7 @@ const BodyContainerStyle = styled.div`
 `;
 
 const NavContainerStyle = styled.div`
-  height: 100px;
+  height: 40px;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -20,15 +21,16 @@ const NavContainerStyle = styled.div`
   border: 1px solid black;
 
   .logo {
-    height: 100px;
-    width: 100px;
+    height: 40px;
+    width: 40px;
   }
 `;
 
 const PeopleContainerStyle = styled.div`
   display: flex;
   flex-flow: row wrap;
-  width: 80%;
+  width: 610px;
+  minimum-width: 610px;
 `;
 
 class App extends Component {
@@ -42,6 +44,8 @@ class App extends Component {
         </NavContainerStyle>
 
         <BodyContainerStyle>
+
+
           <PeopleContainerStyle>
             {this.state.dummyData.map((person, i) => {
               return (

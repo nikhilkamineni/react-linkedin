@@ -6,6 +6,8 @@ function Nav() {
     display: flex;
     flex-direction: row;
     align-items: center;
+    color: white;
+    font-size: 0.8rem;
     
     div {
       margin: 0 15px;
