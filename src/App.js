@@ -6,6 +6,11 @@ import Nav from './components/Nav/nav';
 import dummyData from './dummy-data'
 import People from './components/People/people';
 
+const BodyContainerStyle = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
 const NavContainerStyle = styled.div`
   height: 100px;
   width: 100%;
@@ -20,19 +25,33 @@ const NavContainerStyle = styled.div`
   }
 `;
 
+const PeopleContainerStyle = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+`;
+
 class App extends Component {
   state = {dummyData};
 
   render() {
     return (
       <div className="App">
-      <NavContainerStyle className='NavContainer'><Nav /></NavContainerStyle>
-      {this.state.dummyData.map((person, i) => {
-        return (
-          <People key={i} person={person}/>
-        )
-      })}
+        <NavContainerStyle className='NavContainer'>
+          <Nav />
+        </NavContainerStyle>
 
+        <BodyContainerStyle>
+          <PeopleContainerStyle>
+            {this.state.dummyData.map((person, i) => {
+              return (
+                <People 
+                  key={i} 
+                  person={person}
+                />)
+            })}
+          </PeopleContainerStyle>
+        </BodyContainerStyle>
       </div>
     );
   }
