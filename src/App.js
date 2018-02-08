@@ -39,6 +39,10 @@ const PeopleContainerStyle = styled.div`
   background-color: #FFFFFF;
 `;
 
+const AdHeader = styled.div`
+  height: 40px;
+`
+
 // App component
 class App extends Component {
   state = {dummyData};
@@ -49,6 +53,8 @@ class App extends Component {
         <NavContainerStyle className='NavContainer'>
           <Nav />
         </NavContainerStyle>
+
+        <AdHeader>Ad Header</AdHeader>
 
         <BodyContainerStyle>
           <Connections />
