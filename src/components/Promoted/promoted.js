@@ -8,6 +8,7 @@ function Promoted() {
     border: 1px solid #CACCCE;
     padding: 0;
     margin: 0 5px;
+    background-color: #FFFFFF;
   `;
 
   return (

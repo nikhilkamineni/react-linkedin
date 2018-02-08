@@ -9,6 +9,7 @@ function Connections() {
     margin: 0 5px;
     display: flex;
     flex-direction: column;
+    background-color: #FFFFFF;
 
     h1, h3 {
       color: #0077B5;

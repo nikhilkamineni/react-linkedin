@@ -35,6 +35,7 @@ const PeopleContainerStyle = styled.div`
   flex-flow: row wrap;
   width: 610px;
   minimum-width: 610px;
+  background-color: #FFFFFF;
 `;
 
 class App extends Component {
