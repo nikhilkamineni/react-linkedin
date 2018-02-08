@@ -3,22 +3,26 @@ import styled from 'styled-components';
 import logo from './logo.svg';
 import './App.css';
 import Nav from './components/Nav/nav';
-import dummyData from './dummy-data'
+import dummyData from './dummy-data';
 import People from './components/People/people';
-import Connections from './components/Connections/connections'
+import Connections from './components/Connections/connections';
+import Promoted from './components/Promoted/promoted';
 
 const BodyContainerStyle = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 1200px;
 `;
 
 const NavContainerStyle = styled.div`
   height: 40px;
-  width: 100%;
+  width: auto;
+  minimum-width: 1000px;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 270px;
   background: #0077B5;
-  border: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
 
   .logo {
     height: 40px;
@@ -44,8 +48,7 @@ class App extends Component {
         </NavContainerStyle>
 
         <BodyContainerStyle>
-
-
+          <Connections />
           <PeopleContainerStyle>
             {this.state.dummyData.map((person, i) => {
               return (
@@ -55,6 +58,7 @@ class App extends Component {
                 />)
             })}
           </PeopleContainerStyle>
+          <Promoted />
         </BodyContainerStyle>
       </div>
     );

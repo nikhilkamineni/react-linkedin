@@ -1,9 +1,19 @@
 import React from 'react';
+import styled from 'styled-components';
 
 function Promoted() {
+  const PromotedStyles = styled.div`
+    width: 280px;
+    height: 400px;
+    border: 1px solid #CACCCE;
+    padding: 0;
+    margin: 0 5px;
+  `;
+
   return (
-    <div className='Promoted'>
-    </div>
+    <PromotedStyles className='promoted'>
+      <h1>Promoted</h1>
+    </PromotedStyles>
   )
 }
 

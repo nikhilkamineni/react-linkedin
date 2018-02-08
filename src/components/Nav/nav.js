@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 function Nav() {
   const NavStyles = styled.div`
+    width: 900px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -16,7 +17,6 @@ function Nav() {
   return (
     <NavStyles>
       <img src='https://www.juliusdesign.net/sm-reference/img/linkedin-logo.png' className='logo'/>
-      {/* <div>Search Bar</div> */}
       <div>
         <form>
           <input type='text' value='Search' />

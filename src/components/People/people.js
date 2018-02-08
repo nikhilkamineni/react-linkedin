@@ -4,7 +4,9 @@ import styled from 'styled-components';
 function People(props) {
   const PeopleStyles = styled.div`
     width: 200px;
-    border: 1px solid black;
+    border: 1px solid #CACCCE;
+    padding: 0;
+    margin: 0;
     
     ul {
       display: flex;
@@ -19,7 +21,7 @@ function People(props) {
       display: flex;
       justify-content: center;
       color: #86888A;
-      padding: 5px;
+      text-align: center;
     }
 
     img {
@@ -32,21 +34,24 @@ function People(props) {
       width: auto;
       background: white;
       color: #0077B5;
-      margin: 5px 0;
+      margin: 10px 0;
     }
 
     .userName {
       color: #313335;
       font-weight: bold;
       font-size: 1rem;
+      padding: 5px;
     }
 
     .jobTitle {
       font-size: 0.8rem;
+      width: 170px;
+      height: 20px;
+      padding: 15px;
     }
-
-
   `;
+  
   return(
     <PeopleStyles>
       <ul>
