@@ -18,7 +18,6 @@ const BodyContainerStyle = styled.div`
 const NavContainerStyle = styled.div`
   height: 40px;
   width: auto;
-  minimum-width: 1000px;
   margin: 0;
   padding: 0 0 0 270px;
   background: #0077B5;
@@ -26,8 +25,8 @@ const NavContainerStyle = styled.div`
   justify-content: flex-start;
 
   .logo {
-    height: 40px;
-    width: 40px;
+    height: 20px;
+    width: 20px;
   }
 `;
 

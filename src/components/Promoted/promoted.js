@@ -7,7 +7,7 @@ function Promoted() {
     height: 240px;
     border: 1px solid #CACCCE;
     padding: 0;
-    margin: 0 5px;
+    margin: 0 15px;
     background-color: #FFFFFF;
     box-shadow: -2px 4px #D0D3D6;
 
