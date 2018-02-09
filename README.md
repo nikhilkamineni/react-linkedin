@@ -2,7 +2,7 @@
 
 This challenge was to recreate a linked-in page using React and styled-components.
 
-
+Deployed here: https://focused-brown-312623.netlify.com/
 
 
 
