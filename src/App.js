@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import './App.css';
-import Nav from './components/Nav/Nav';
 import dummyData from './dummy-data';
-import People from './components/People/People';
-import Connections from './components/Connections/Connections';
-import Promoted from './components/Promoted/Promoted';
+import Nav from './components/nav';
+import People from './components/people';
+import Connections from './components/connections';
+import Promoted from './components/promoted';
 
 // styled-components styles
 const BodyContainerStyle = styled.div`
