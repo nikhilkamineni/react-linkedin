@@ -8,11 +8,11 @@ import People from './components/People/people';
 import Connections from './components/Connections/connections';
 import Promoted from './components/Promoted/promoted';
 
-// styles
+// styled-components styles
 const BodyContainerStyle = styled.div`
   display: flex;
-  justify-content: space-between;
-  width: 1200px;
+  justify-content: center;
+  /* width: 1200px; */
 `;
 
 const NavContainerStyle = styled.div`
@@ -34,7 +34,7 @@ const NavContainerStyle = styled.div`
 const PeopleContainerStyle = styled.div`
   display: flex;
   flex-flow: row wrap;
-  width: 610px;
+  width: 606px;
   minimum-width: 610px;
   background-color: #FFFFFF;
 `;

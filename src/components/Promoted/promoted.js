@@ -4,11 +4,18 @@ import styled from 'styled-components';
 function Promoted() {
   const PromotedStyles = styled.div`
     width: 280px;
-    height: 400px;
+    height: 240px;
     border: 1px solid #CACCCE;
     padding: 0;
     margin: 0 5px;
     background-color: #FFFFFF;
+    box-shadow: -2px 4px #D0D3D6;
+
+    h1 {
+      float: left;
+      margin 15px 15px;
+      color: #CACCCE;
+    }
   `;
 
   return (

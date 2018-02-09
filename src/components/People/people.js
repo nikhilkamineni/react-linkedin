@@ -25,8 +25,10 @@ function People(props) {
     }
 
     img {
-      height: 200px;
-      width: 200px;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      margin-top: 20px;
     }
 
     button {
@@ -52,7 +54,7 @@ function People(props) {
     }
 
     .person:hover {
-      background-color: #E6E9EC;
+      background-color: rgb(234, 243, 247);
     }
   `;
   
