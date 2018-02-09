@@ -15,11 +15,11 @@ function Nav() {
     }
   `;
   return (
-    <NavStyles>
-      <img src='https://www.juliusdesign.net/sm-reference/img/linkedin-logo.png' className='logo'/>
+    <NavStyles defaulte='search'>
+      <img src='https://www.juliusdesign.net/sm-reference/img/linkedin-logo.png' className='logo' alt='Logo'/>
       <div>
         <form>
-          <input type='text' value='Search' />
+          <input type='text' />
         </form>
       </div>
       <div>Home</div>

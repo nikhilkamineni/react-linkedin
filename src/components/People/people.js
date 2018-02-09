@@ -61,7 +61,7 @@ function People(props) {
   return(
     <PeopleStyles>
       <ul className='person'>
-        <li><img src={props.person.imageUrl} /></li>
+        <li><img src={props.person.imageUrl} alt='Kitty'/></li>
         <li className='userName'>{props.person.username}</li>
         <li className='jobTitle'>{props.person.jobTitle}</li>
         <li className='connections'>{props.person.connections}</li>
